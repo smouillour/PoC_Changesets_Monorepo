@@ -1,0 +1,20 @@
+{
+  "name": "@smouillour/poc-changeset-webapp-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "vite build ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "smouillour <smouillour@talend.com>",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.2",
+  "devDependencies": {
+    "vite": "^7.2.2",
+    "@smouillour/poc-changeset-config-eslint": "workspace:^",
+    "@smouillour/poc-changeset-config-tsconfig": "workspace:^",
+    "@smouillour/poc-changeset-config-vitest": "workspace:^"
+  }
+}

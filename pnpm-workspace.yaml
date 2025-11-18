@@ -1,0 +1,8 @@
+packages:
+  - "packages/tools/*"
+  - "packages/core/*"
+  - "packages/ui/*"
+  - "packages/modules/*"
+  - "packages/app"
+  - "packages/webapps/*"
+  - "packages/parcels/*"
