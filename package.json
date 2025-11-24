@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:all": "pnpm -r run build"
+    "build:all": "pnpm -r run build",
+    "release": "changeset publish",
+    "prerelease": "changeset publish"
   },
   "keywords": [],
   "author": "smouillour <smouillour@talend.com>",
