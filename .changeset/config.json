@@ -2,10 +2,10 @@
   "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [["@smouillour/poc-changeset-webapp-microfrontend", "@smouillour/poc-changeset-webapp-frontend", "@smouillour/poc-changeset-app"]],
   "linked": [],
   "access": "restricted",
-  "baseBranch": "main",
+  "baseBranch": "develop",
   "updateInternalDependencies": "patch",
   "ignore": []
 }
