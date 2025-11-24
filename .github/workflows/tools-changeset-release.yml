@@ -3,14 +3,13 @@ name: Tools:Changeset-Release
 on:
   workflow_dispatch:
     inputs:
-      preRelease:
-        description: "Is it a pre-release version?"
+      snapshot:
+        description: "Is it a snapshot version?"
         type: boolean
         required: true
         default: false
   push:
     branches:
-      - develop
       - release/**
 
 permissions:
@@ -63,11 +62,11 @@ jobs:
       - name: Run Changesets Action
         uses: changesets/action@v1
         with:
-          publish: ${{ inputs.preRelease == 'true' && 'pnpm prerelease' || 'pnpm release' }}
+          publish: ${{ inputs.snapshot == 'true' && 'pnpm publish:snapshot' || 'pnpm publish' }}
           title: "Release: New Version Updates" # The title for the changeset commit
           commit: "Release new versions" # The commit message for the changeset commit
           setupGitUser: true # Set this to true if you want to set up the git user for the action
-          version: pnpm changeset version # The command to run to bump the version
+          version: ${{ inputs.snapshot == 'true' && 'pnpm version:snapshot' || 'pnpm version' }} # The command to run to bump the version
           createGithubReleases: true # Set this to true if you want to create a GitHub release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

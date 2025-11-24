@@ -4,8 +4,10 @@
   "description": "",
   "scripts": {
     "build:all": "pnpm -r run build",
-    "release": "changeset publish",
-    "prerelease": "changeset publish"
+    "publish": "changeset publish",
+    "publish:snapshot": "changeset publish",
+    "version": "changeset version",
+    "version:snapshot": "changeset version --snapshot snap-$(date +%s)"
   },
   "keywords": [],
   "author": "smouillour <smouillour@talend.com>",
