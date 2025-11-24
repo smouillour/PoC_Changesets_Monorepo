@@ -18,7 +18,7 @@ importers:
         specifier: workspace:^
         version: link:../core/poc-api
       '@smouillour/poc-changeset-core-config':
-        specifier: workspace:^
+        specifier: workspace:^1.1.0
         version: link:../core/poc-core-config
       '@smouillour/poc-changeset-module-a':
         specifier: workspace:^
