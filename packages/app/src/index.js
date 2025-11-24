@@ -1,3 +1,10 @@
+import { pocApi } from "@smouillour/poc-changeset-api";
+
 export function pocApp() {
-  return 'Hello from poc-app';
+  const appMessage = 'Hello from poc-app';
+  const result = {
+    pocApp: appMessage,
+    pocApi: pocApi()
+  }
+  return result;
 }
