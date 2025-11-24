@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:all": "pnpm -r run build",
-    "publish": "changeset publish",
-    "publish:snapshot": "changeset publish",
-    "version": "changeset version",
-    "version:snapshot": "changeset version --snapshot snap-$(date +%s)"
+    "build:all": "pnpm -r run build"
   },
   "keywords": [],
   "author": "smouillour <smouillour@talend.com>",
