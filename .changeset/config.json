@@ -3,7 +3,7 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [["@smouillour/poc-changeset-webapp-microfrontend", "@smouillour/poc-changeset-webapp-frontend", "@smouillour/poc-changeset-*"]],
+  "linked": [["@smouillour/poc-*"]],
   "access": "restricted",
   "baseBranch": "develop",
   "updateInternalDependencies": "patch",
