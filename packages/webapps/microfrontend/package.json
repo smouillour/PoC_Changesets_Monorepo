@@ -16,5 +16,8 @@
     "@smouillour/poc-changeset-config-eslint": "workspace:^",
     "@smouillour/poc-changeset-config-tsconfig": "workspace:^",
     "@smouillour/poc-changeset-config-vitest": "workspace:^"
+  },
+  "dependencies": {
+    "@smouillour/poc-changeset-app": "workspace:^"
   }
 }

@@ -264,6 +264,10 @@ importers:
         version: 7.2.2
 
   packages/webapps/frontend:
+    dependencies:
+      '@smouillour/poc-changeset-app':
+        specifier: workspace:^
+        version: link:../../app
     devDependencies:
       '@smouillour/poc-changeset-config-eslint':
         specifier: workspace:^
@@ -279,6 +283,10 @@ importers:
         version: 7.2.2
 
   packages/webapps/microfrontend:
+    dependencies:
+      '@smouillour/poc-changeset-app':
+        specifier: workspace:^
+        version: link:../../app
     devDependencies:
       '@smouillour/poc-changeset-config-eslint':
         specifier: workspace:^
