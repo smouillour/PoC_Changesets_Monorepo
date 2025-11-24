@@ -14,7 +14,7 @@
   "packageManager": "pnpm@10.12.2",
   "dependencies": {
     "@smouillour/poc-changeset-api": "workspace:^",
-    "@smouillour/poc-changeset-core-config": "workspace:^1.1.0",
+    "@smouillour/poc-changeset-core-config": "workspace:^",
     "@smouillour/poc-changeset-module-a": "workspace:^",
     "@smouillour/poc-changeset-module-b": "workspace:^",
     "@smouillour/poc-changeset-module-c": "workspace:^",
