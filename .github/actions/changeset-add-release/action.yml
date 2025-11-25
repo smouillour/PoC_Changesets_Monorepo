@@ -19,8 +19,8 @@ runs:
       shell: bash
       run: |
         pnpm changeset add --empty
-    
-    -name: Update new changeset file
+
+    - name: Update new changeset file
       shell: bash
       env:
         RELEASE_TYPE: ${{ inputs.release-type }}
