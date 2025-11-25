@@ -1,5 +1,16 @@
 # @smouillour/poc-changeset-app
 
+## 1.2.0
+
+### Minor Changes
+
+- ef8876a: Release: release/20251125-sleepy-sloth
+
+### Patch Changes
+
+- Updated dependencies [34c4a32]
+  - @smouillour/poc-changeset-core-config@1.1.2
+
 ## 1.1.0
 
 ### Minor Changes
