@@ -1,5 +1,11 @@
 # @smouillour/poc-changeset-core-config
 
+## 1.1.2
+
+### Patch Changes
+
+- 34c4a32: 1.1.2
+
 ## 1.1.1
 
 ### Patch Changes
