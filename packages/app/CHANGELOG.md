@@ -1,5 +1,25 @@
 # @smouillour/poc-changeset-app
 
+## 2.0.0
+
+### Major Changes
+
+- ee619da: Release: release/20251125-spicy-hedgehog
+
+### Patch Changes
+
+- a804499: patch me
+- Updated dependencies [a804499]
+- Updated dependencies [a804499]
+- Updated dependencies [a804499]
+- Updated dependencies [a804499]
+  - @smouillour/poc-changeset-api@1.2.0
+  - @smouillour/poc-changeset-module-a@1.1.0
+  - @smouillour/poc-changeset-module-b@1.1.0
+  - @smouillour/poc-changeset-ui-components@1.1.0
+  - @smouillour/poc-changeset-ui-forms@1.1.0
+  - @smouillour/poc-changeset-ui-containers@1.1.0
+
 ## 1.2.0
 
 ### Minor Changes
