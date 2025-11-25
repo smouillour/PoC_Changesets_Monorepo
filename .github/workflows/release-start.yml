@@ -1,0 +1,83 @@
+name: Tools:Changeset-Release-Develop
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: "Type of release to create (major, minor, patch)"
+        required: true
+        default: "minor"
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+  issues: read
+  actions: none
+  checks: none
+  deployments: none
+  repository-projects: none
+  security-events: none
+  statuses: none
+
+jobs:
+  Changesets-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: develop
+
+      - name: Generate a random branch name
+        id: generate_random_release_branch_name
+        shell: bash
+        run: |
+          ADJECTIVES=(curious happy sneaky sleepy spicy shiny wild tiny giant)
+          ANIMALS=(otter panda fox hedgehog llama koala turtle dragon sloth)
+
+          adj=${ADJECTIVES[$RANDOM % ${#ADJECTIVES[@]}]}
+          animal=${ANIMALS[$RANDOM % ${#ANIMALS[@]}]}
+
+          # Date in YYYYMMDD format
+          date=$(date +%Y%m%d)
+
+          branch_name="release/${adj}-${date}-${animal}"
+
+          echo "BRANCH_NAME=$branch_name"
+          echo "BRANCH_NAME=$branch_name" >> "$GITHUB_OUTPUT"
+
+      - name: Create and push release branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git switch -c "${{ steps.generate_random_release_branch_name.outputs.BRANCH_NAME }}"
+          git push origin "${{ steps.generate_random_release_branch_name.outputs.BRANCH_NAME }}"
+
+      # Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      # Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+          cache: "pnpm"
+
+      # Install dependencies
+      - name: Install updated dependencies
+        shell: bash
+        run: pnpm install --frozen-lockfile
+
+      # Add changeset to release app, frontend and microfrontend packages
+      - name: Create Changeset for release packages
+        uses: ./.github/actions/changeset-add-release
+        with:
+          release-type: ${{ github.event.inputs.release-type }}
+          summary: "Release: ${{steps.generate_random_release_branch_name.outputs.BRANCH_NAME}}"
