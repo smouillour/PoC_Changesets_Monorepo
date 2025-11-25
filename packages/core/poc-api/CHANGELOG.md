@@ -1,5 +1,15 @@
 # @smouillour/poc-changeset-api
 
+## 1.2.0
+
+### Minor Changes
+
+- a804499: minor me
+
+### Patch Changes
+
+- a804499: patch me
+
 ## 1.1.0
 
 ### Minor Changes
