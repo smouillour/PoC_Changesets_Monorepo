@@ -20,4 +20,4 @@ runs:
       env:
         RELEASE_TYPE: ${{ inputs.release-type }}
         SUMMARY: "${{ inputs.summary }}"
-      run: ./add-release-changeset.sh
+      run: ${{ github.action_path }}/add-release-changeset.sh
