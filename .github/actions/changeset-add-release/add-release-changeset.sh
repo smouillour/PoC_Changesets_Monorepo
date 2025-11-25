@@ -11,6 +11,7 @@ SUMMARY="${SUMMARY:-}"
 # Packages to add to the changeset
 PACKAGES=(
   "@smouillour/poc-changeset-app"
+  "@smouillour/poc-changeset-parcel-app"
   "@smouillour/poc-changeset-webapp-frontend"
   "@smouillour/poc-changeset-webapp-microfrontend"
 )
