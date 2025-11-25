@@ -1,0 +1,29 @@
+name: Changeset:AddRelease
+
+description: "Add main packages to the release"
+
+inputs:
+  release-type:
+    description: "The type of release to create (major, minor, patch)"
+    required: true
+    default: "patch"
+  summary:
+    description: "The summary to add to the changeset"
+    required: false
+    default: ""
+
+runs:
+  using: "composite"
+  steps:
+    - name: Add main packages to the release
+      shell: bash
+      run: |
+        pnpm changeset add --empty
+    
+    -name: Update new changeset file
+      shell: bash
+      env:
+        RELEASE_TYPE: ${{ inputs.release-type }}
+        SUMMARY: "${{ inputs.summary }}"
+      run: |
+        ./script.sh
