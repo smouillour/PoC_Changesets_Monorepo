@@ -45,7 +45,7 @@ jobs:
           # Date in YYYYMMDD format
           date=$(date +%Y%m%d)
 
-          branch_name="release/${adj}-${date}-${animal}"
+          branch_name="release/${date}-${adj}-${animal}"
 
           echo "BRANCH_NAME=$branch_name"
           echo "BRANCH_NAME=$branch_name" >> "$GITHUB_OUTPUT"
