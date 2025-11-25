@@ -15,14 +15,9 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Add main packages to the release
-      shell: bash
-      run: |
-        pnpm changeset add --empty
-
     - name: Update new changeset file
       shell: bash
       env:
         RELEASE_TYPE: ${{ inputs.release-type }}
         SUMMARY: "${{ inputs.summary }}"
-      run: ./script/add-release-changeset.sh
+      run: ./add-release-changeset.sh
