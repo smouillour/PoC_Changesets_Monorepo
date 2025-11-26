@@ -1,5 +1,11 @@
 # @smouillour/poc-changeset-webapp-microfrontend
 
+## 2.0.1
+
+### Patch Changes
+
+- @smouillour/poc-changeset-app@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
