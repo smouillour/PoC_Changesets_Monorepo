@@ -1,5 +1,18 @@
 # @smouillour/poc-changeset-module-a
 
+## 2.0.0
+
+### Major Changes
+
+- 80c5e2a: align version
+
+### Patch Changes
+
+- Updated dependencies [80c5e2a]
+  - @smouillour/poc-changeset-api@2.0.0
+  - @smouillour/poc-changeset-core-config@2.0.0
+  - @smouillour/poc-changeset-ui-components@2.0.0
+
 ## 1.1.0
 
 ### Minor Changes
