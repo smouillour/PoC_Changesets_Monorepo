@@ -1,5 +1,19 @@
 # @smouillour/poc-changeset-app
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [80c5e2a]
+  - @smouillour/poc-changeset-api@2.0.0
+  - @smouillour/poc-changeset-core-config@2.0.0
+  - @smouillour/poc-changeset-module-a@2.0.0
+  - @smouillour/poc-changeset-module-b@2.0.0
+  - @smouillour/poc-changeset-module-c@2.0.0
+  - @smouillour/poc-changeset-ui-components@2.0.0
+  - @smouillour/poc-changeset-ui-containers@2.0.0
+  - @smouillour/poc-changeset-ui-forms@2.0.0
+
 ## 2.0.0
 
 ### Major Changes
