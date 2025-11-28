@@ -1,5 +1,16 @@
 # @smouillour/poc-changeset-webapp-microfrontend
 
+## 2.1.0
+
+### Minor Changes
+
+- ac59662: Release: release/20251128-sleepy-otter
+
+### Patch Changes
+
+- Updated dependencies [ac59662]
+  - @smouillour/poc-changeset-app@2.1.0
+
 ## 2.0.1
 
 ### Patch Changes
