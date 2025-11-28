@@ -1,5 +1,11 @@
 # @smouillour/poc-changeset-module-b
 
+## 2.1.0
+
+### Minor Changes
+
+- 7cfa0c4: test
+
 ## 2.0.0
 
 ### Major Changes

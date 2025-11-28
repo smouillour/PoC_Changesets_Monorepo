@@ -1,5 +1,19 @@
 # @smouillour/poc-changeset-app
 
+## 2.1.0
+
+### Minor Changes
+
+- ac59662: Release: release/20251128-sleepy-otter
+
+### Patch Changes
+
+- Updated dependencies [7cfa0c4]
+  - @smouillour/poc-changeset-module-a@2.1.0
+  - @smouillour/poc-changeset-module-b@2.1.0
+  - @smouillour/poc-changeset-module-c@2.1.0
+  - @smouillour/poc-changeset-ui-forms@2.1.0
+
 ## 2.0.1
 
 ### Patch Changes
