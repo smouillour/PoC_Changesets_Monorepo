@@ -1,5 +1,16 @@
 # @smouillour/poc-changeset-module-c
 
+## 2.1.0
+
+### Minor Changes
+
+- 7cfa0c4: test
+
+### Patch Changes
+
+- Updated dependencies [7cfa0c4]
+  - @smouillour/poc-changeset-ui-forms@2.1.0
+
 ## 2.0.0
 
 ### Major Changes
